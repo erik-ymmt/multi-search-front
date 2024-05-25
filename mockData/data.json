@@ -1,0 +1,43 @@
+{
+  "Equipments": [
+    {
+      "EquipmentID": "CTMQ1",
+      "EquipmentName": "Cadeira"
+    }
+  ],
+  "Materials": [
+    {
+      "MaterialID": "MECAJA",
+      "MaterialName": "Mesa com Cadeira Jantar"
+    }
+  ],
+  "SalesOrders": [
+    {
+      "SalesOrderID": 22362,
+      "DeliveryDate": "10/07/2018",
+      "Customer": "Zathunicon",
+      "MaterialID": "MECAJA",
+      "MaterialName": "Mesa com Cadeira Jantar",
+      "Quantity": 15,
+      "TotalValue": 1500
+    }
+  ],
+  "PurchaseOrders": [
+    {
+      "PurchaseOrderID": 12289,
+      "DeliveryDate": "10/03/2018",
+      "Supplier": "Hatfan",
+      "MaterialID": "TMR",
+      "MaterialName": "Tampo para Mesa Retangular",
+      "Quantity": 120,
+      "TotalCost": 120
+    }
+  ],
+  "Workforce": [
+    {
+      "WorkforceID": 1,
+      "Name": "Erik Yamamoto",
+      "Shift": "Turno A"
+    }
+  ]
+}
