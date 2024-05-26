@@ -1,8 +1,10 @@
+import logo from '../img/logo_multisearch_header.png'
+
 function Header() {
   return (
     <header className="d-flex gap-2 flex-column align-items-center w-50">
       <div>
-        <img alt="multisearch logo" src="./src/img/logo_multisearch.png" />
+        <img alt="multisearch logo" src={logo} />
       </div>
       <div className="input-group">
         <input type="text" placeholder="Search" className="form-control" />
