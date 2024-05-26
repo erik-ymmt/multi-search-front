@@ -25,7 +25,7 @@ function Results() {
   };
 
   return (
-    <div className="d-flex vh-100 flex-column align-items-center gap-3 w-50 mb-5">
+    <div className="d-flex vh-100 flex-column align-items-center gap-3 mb-5 col-12 col-md-8 col-lg-5">
     <header className="d-flex gap-2 flex-column align-items-center w-100">
       <div>
         <img alt="multisearch logo" src={logo} />
