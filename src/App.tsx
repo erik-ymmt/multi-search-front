@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <main className="d-flex vh-100 flex-column align-items-center gap-3">
+    <main className="d-flex min-vh-100 flex-column align-items-center gap-3 py-5">
       <Header />
       <Results />
     </main>

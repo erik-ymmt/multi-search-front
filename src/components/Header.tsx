@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="d-flex gap-2 flex-column align-items-center w-25 mt-5">
+    <header className="d-flex gap-2 flex-column align-items-center w-50">
       <div>
         <img alt="multisearch logo" src="./public/logo_multisearch.png" />
       </div>
