@@ -16,7 +16,6 @@ const mapCategory: MapCategory = {
 };
 
 function ResultCard({ category, data }: { category: string;  data: Equipment[] | Material[] | SalesOrder[] | PurchaseOrder[] | Workforce[] | undefined }) {
-  console.log('data', data)
   return (
     <div className="card w-100">
       <div className="card-header bg-transparent d-flex align-items-center justify-content-between">
@@ -29,42 +28,42 @@ function ResultCard({ category, data }: { category: string;  data: Equipment[] |
       <div className="card-body">
         {
           !data || data.length === 0 ? <p className="text-center text-body-tertiary">Nenhum item encontrado</p> :
-          data.map((item) => {
+          data.map((item, index) => {
             if (category === "Equipments") {
-              return <p className="d-flex gap-2">
+              return <div className="d-flex gap-2" key={category + index}>
                 <div className="text-decoration-underline text-danger">#{(item as Equipment)["EquipmentID"]}</div>
                 <div>{(item as Equipment)["EquipmentName"]}</div>
-              </p>;
+              </div>;
             }
             if (category === "Materials") {
-              return <p className="d-flex gap-2">
+              return <div className="d-flex gap-2" key={category + index}>
                 <div className="text-decoration-underline text-danger">#{(item as Material)["MaterialID"]}</div>
                 <div>{(item as Material)["MaterialName"]}</div>
-              </p>;
+              </div>;
             }
             if (category === "SalesOrders") {
-              return <p className="d-flex justify-content-between gap-2">
+              return <div className="d-flex justify-content-between gap-2" key={category + index}>
                 <div className="d-flex  gap-2">
                   <div className="text-decoration-underline text-danger">#{(item as SalesOrder)["SalesOrderID"]}</div>
                   <div>{(item as SalesOrder)["MaterialName"]}</div>
                 </div>
                 <div>Qtd: {(item as SalesOrder)["Quantity"]}</div>
-              </p>;
+              </div>;
             }
             if (category === "PurchaseOrders") {
-              return <p className="d-flex justify-content-between gap-2">
+              return <div className="d-flex justify-content-between gap-2" key={category + index}>
                 <div className="d-flex  gap-2">
                   <div className="text-decoration-underline text-danger">#{(item as PurchaseOrder)["PurchaseOrderID"]}</div>
                   <div>{(item as PurchaseOrder)["MaterialName"]}</div>
                 </div>
                 <div>Qtd: {(item as PurchaseOrder)["Quantity"]}</div>
-              </p>;
+              </div>;
             }
             if (category === "Workforce") {
-              return <p className="d-flex gap-2">
+              return <div className="d-flex gap-2" key={category + index}>
                 <div className="text-decoration-underline text-danger">#{(item as Workforce)["WorkforceID"]}</div>
                 <div>{(item as Workforce)["Name"]}</div>
-              </p>;
+              </div>;
             }
           })
         }
