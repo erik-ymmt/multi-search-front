@@ -2,7 +2,7 @@ function Header() {
   return (
     <header className="d-flex gap-2 flex-column align-items-center w-50">
       <div>
-        <img alt="multisearch logo" src="./public/logo_multisearch.png" />
+        <img alt="multisearch logo" src="./src/img/logo_multisearch.png" />
       </div>
       <div className="input-group">
         <input type="text" placeholder="Search" className="form-control" />
