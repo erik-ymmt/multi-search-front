@@ -12,38 +12,38 @@ export interface SearchResults {
 }
 
 export interface Equipment {
-  EquipmentID?: string;
-  EquipmentName?: string;
+  EquipmentID: string;
+  EquipmentName: string;
 }
 
 export interface Material {
-  MaterialID?: string;
-  MaterialName?: string;
+  MaterialID: string;
+  MaterialName: string;
 }
 
 export interface SalesOrder {
-  SalesOrderID?: number;
+  SalesOrderID: number;
   DeliveryDate?: string;
   Customer?: string;
   MaterialID?: string;
-  MaterialName?: string;
-  Quantity?: number;
+  MaterialName: string;
+  Quantity: number;
   TotalValue?: number;
 }
 
 export interface PurchaseOrder {
-  PurchaseOrderID?: number;
+  PurchaseOrderID: number;
   DeliveryDate?: string;
   Supplier?: string;
   MaterialID?: string;
-  MaterialName?: string;
-  Quantity?: number;
+  MaterialName: string;
+  Quantity: number;
   TotalCost?: number;
 }
 
 export interface Workforce {
-  WorkforceID?: number;
-  Name?: string;
+  WorkforceID: number;
+  Name: string;
   Shift?: string;
 }
 
