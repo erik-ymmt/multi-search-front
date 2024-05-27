@@ -1,4 +1,4 @@
-export interface Response {
+export interface SearchResponse {
   resultsCount: number;
   results: SearchResults
 }
@@ -49,7 +49,29 @@ export interface Workforce {
 
 export type ResultData = Equipment | Material | SalesOrder | PurchaseOrder | Workforce;
 
-
 export interface MapCategory {
   [key: string]: { titlePtg: string; id: string };
+}
+
+export interface SettingsAlertProps {
+  setServerLocal: (value: boolean) => void;
+}
+
+export interface ItemInfoProps {
+  toggleDetails: (index: string | null) => void;
+  data?: PurchaseOrderInfo | SalesOrderInfo;
+}
+
+interface SalesOrderInfo {
+  "Data de Entrega"?: string;
+  "Cliente"?: string;
+  "ID Material"?: string;
+  "Valor"?: string;
+}
+
+interface PurchaseOrderInfo {
+  "Data de Entrega"?: string;
+  "Fornecedor"?: string;
+  "ID Material"?: string;
+  "Custo": string;
 }
