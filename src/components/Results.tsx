@@ -10,7 +10,8 @@ function Results() {
   const searchResults: SearchResults = response.results;
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/search?q=${searchTerm}`);
+      // const response = await fetch(`http://localhost:8080/search?q=${searchTerm}`);
+      const response = await fetch(`https://multi-search-back-latest.onrender.com/search?q=${searchTerm}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
