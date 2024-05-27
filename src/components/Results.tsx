@@ -34,7 +34,7 @@ function Results() {
       setResponse(data)
     } catch (error) {
       isServerLocal ? 
-      setMessage("Verifique se o backend foi iniciado localmente em http://localhost:8080/ ou use o backend da nuvem.") :
+      setMessage("Verifique se o backend foi iniciado localmente em http://localhost:8080/ ou mude a configuração para o backend da nuvem.") :
       setMessage("Ops, parece que ocorreu um erro no servidor na nuvem, tente mais tarde ou rode localmente, instruções em https://github.com/erik-ymmt/multi-search-back")
       console.error('Error:', error);
     }

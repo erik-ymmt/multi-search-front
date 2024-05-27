@@ -30,11 +30,18 @@ function SettingsAlert({ setServerLocal }: SettingsAlertProps) {
   return (
     <div className="position-absolute d-flex flex-column align-items-center gap-1 card py-3 px-4 bg-light shadow-sm" style={{'zIndex':10}}>
       <p>Por favor, selecione o servidor backend:</p>
-      <button onClick={() => setServerLocal(true)} className="btn btn-secondary d-flex align-items-center w-100">
-        Servidor Local (http://localhost:8080/)
+      <button
+        onClick={() => setServerLocal(true)}
+        className="btn btn-secondary d-flex align-items-center w-100"
+        title="O deploy deve ser feito manualmente, basta seguir instruções do repositório.">
+        Backend Local (http://localhost:8080/)
+        <span className="tooltip">Tooltip text</span>
       </button>
-      <button onClick={callCloudServer} className="btn btn-secondary  d-flex align-items-center w-100">
-        Usar Servidor na Nuvem
+      <button
+        onClick={callCloudServer}
+        className="btn btn-secondary  d-flex align-items-center w-100"
+        title="Backend com deploy na Render.com, precisa iniciar o serviço no primeiro acesso.">
+        Backend Nuvem
       </button>
       {
         showServerMessage && (
@@ -52,9 +59,9 @@ function SettingsAlert({ setServerLocal }: SettingsAlertProps) {
                   </div>
                   <br/>
                   <p>Iniciando backend na nuvem, por favor aguarde.</p>
-                  <p>Como utilizo um serviço gratuito, é necessário reiniciá-lo sempre depois de certo tempo inativo. O processo leva cerca de 50 segundos</p>
+                  <p>O serviço de deploy gratuito da <u>Render.com</u> possui algumas limitações e é necessário reiniciá-lo sempre depois de certo tempo inativo. O processo leva cerca de 1 minuto.</p>
                   <p>Uma mensagem aparecerá indicando o final da operação.</p>
-                  <p>Agradeço a compreensão. Aproveite para conferir o <a href="https://github.com/erik-ymmt/multi-search-back" target="_blank">repositório no GitHub</a>.</p>
+                  <p>Agradeço a compreensão. Aproveite para conferir o <a href="https://github.com/erik-ymmt/multi-search-back" target="_blank">repositório deste backend no GitHub</a>.</p>
                 </div>
               )
             }
