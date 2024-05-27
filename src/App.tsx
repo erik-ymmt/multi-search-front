@@ -1,4 +1,3 @@
-import "./App.css";
 import Results from "./components/Results";
 import "bootstrap/dist/css/bootstrap.css";
 
