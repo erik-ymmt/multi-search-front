@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+## MultiSearch Project - Frontend
+[Deploy link](https://multisearch-erik.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre
+&nbsp;&nbsp; Neste projeto desenvolvi uma aplicação de busca. As buscas são feitas através de uma chamada para o [backend](https://github.com/erik-ymmt/multi-search-back).
 
-Currently, two official plugins are available:
+### Configuração do Backend
+É possível conectar com o backend local ou remoto através da configuração no canto superior esquerdo da tela.
+1. Para a conexão <strong>local</strong>, siga as instruções no repositório do backend.
+2. Para a conexão <strong>remota</strong>, não é necessário fazer nada, apenas aguardar o servidor iniciar. O processo pode demorar cerca de 1 minuto, pois o servidor está hospedado na Render.com de forma gratuita. Sendo assim, com um certo tempo de inatividade, é necessário que ele inicie novamente a API que é criada a partir de uma imagem Docker.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias:
+- React (projeto criado com Vite);
+- Typescript;
+- Bootstrap;
 
-## Expanding the ESLint configuration
+## Como rodar o projeto:
+- Acesse o deploy pronto em [https://multisearch-erik.netlify.app/](https://multisearch-erik.netlify.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  OU
+- Faça um clone do repositório;
+- Navegue até a raiz e instale as dependências com `npm install`;
+- Pronto! Agora inicie a aplicação com `npm run dev`!
