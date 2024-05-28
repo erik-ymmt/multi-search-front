@@ -1,6 +1,7 @@
 ## MultiSearch Project - Frontend
 [Deploy link](https://multisearch-erik.netlify.app/)
 
+![frontend](https://github.com/erik-ymmt/multi-search-front/assets/92269952/be2b6ab7-0c12-4e86-af5a-2836fbed51a0)
 ## Sobre
 &nbsp;&nbsp; Neste projeto desenvolvi uma aplicação de busca. As buscas são feitas através de uma chamada para o [backend](https://github.com/erik-ymmt/multi-search-back).
 
@@ -21,3 +22,7 @@
 - Faça um clone do repositório;
 - Navegue até a raiz e instale as dependências com `npm install`;
 - Pronto! Agora inicie a aplicação com `npm run dev`!
+
+## Acesse também no celular!
+<img src="https://github.com/erik-ymmt/multi-search-front/assets/92269952/952cf927-f2d6-435a-a58d-b234594bc2e8" alt="front_mobile" style="height:500px;">
+
